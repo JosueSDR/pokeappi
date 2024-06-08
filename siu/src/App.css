@@ -1,124 +1,3 @@
-
-
-body{
-  background-color: rgb(255, 242, 242);
-  margin: 0;
-}
-
-.Head{
-  border-style: solid ;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  height: 2em;
-  border: 0;
-  background-color: black;
-  position : fixed;
-  
-}
-
-.Netflix{
-  border-style: solid ;
-  border-color: rgb(26, 223, 20);
-  margin-top: 0;
-  color: hsl(0, 100%, 50%);
-  width: 100px;
-  justify-content: center;
- 
-}
-
-.Netflix5{
-  display: flex;
-  position : fixed;
-  bottom: 0;
-  left: 10%;
-  width: 80%;
-  height: 5%;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-  color: white;
-  background-color: black;
-  
-}
-
-
-.Netflix3{
-  background-image: url("https://sm.ign.com/ign_es/feature/t/the-top-25/the-top-25-greatest-anime-characters-of-all-time_sypg.jpg");
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  background-size: cover ;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  
-}
-.logon{
-  border-style: solid ;
-  border-color: rgb(26, 223, 20);
-  color: #ff0000;
-  width: 50px;
-  margin: 0;
- 
-}
-
-
-.Netflix2{
-  border-style: solid ;
-  border-color: rgb(26, 223, 20);
-  display: flex;
-  color: rgb(255, 255, 255);
-  width: 250px; 
-}
-
-.ButtonContainer {
-  display: flex;
-  gap: 2px; /* Espacio entre los botones */
-  justify-content: space-between;
-}
-
-.ButtonContainer2{
-  display: flex;
-  gap: 2px; /* Espacio entre los botones */
- 
-  
-}
-
-.redButton {
-  background-color: red;
-  color: white;
-  border: none;
-  padding: 2px 2px;
-  cursor: pointer;
-  font-size: 15px;
-  border-radius: 5px;
-  width: 150px;
-}
-
-.blackButton {
-  background-color: black;
-  color: white;
-  border: 2px solid white;
-  padding: 2px 2px;
-  cursor: pointer;
-  font-size: 15px;
-  border-radius: 5px;
-  width: 150px;
-}
-
-@media only screen and (max-width: 600px) {
-  .ojonete5 {
-    background-color: rgb(95, 255, 3);
-  }
-}
-
-
 body {
   background-color: #f0f0f0;
   margin: 0;
@@ -140,12 +19,36 @@ body {
   color: white;
 }
 
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #61dafb;
+  color: #282c34;
+}
+
 .pokemon-container {
   background-color: white;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
+  text-align: center; /* Cambiado a center */
+  max-width: 300px; /* Limitar el ancho máximo */
+  margin: auto; /* Centrar el contenedor */
 }
 
 .pokemon-container img {
@@ -155,6 +58,7 @@ body {
 
 .pokemon-container h1 {
   text-transform: capitalize;
+  margin-bottom: 10px; /* Añadir margen inferior */
 }
 
 .pokemon-container p {
